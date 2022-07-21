@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -42,7 +42,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'DM Sans', 'sans-serif';
   /* 4 */
 }
 
@@ -558,7 +558,454 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.bg-red-500 {
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-\[3\.3125rem\] {
+  margin-bottom: 3.3125rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.-mt-1 {
+  margin-top: -0.25rem;
+}
+
+.-mt-\[2px\] {
+  margin-top: -2px;
+}
+
+.-mt-\[3px\] {
+  margin-top: -3px;
+}
+
+.-mt-\[4px\] {
+  margin-top: -4px;
+}
+
+.-mt-\[6px\] {
+  margin-top: -6px;
+}
+
+.-mt-\[20px\] {
+  margin-top: -20px;
+}
+
+.-mt-2 {
+  margin-top: -0.5rem;
+}
+
+.-mt-4 {
+  margin-top: -1rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.h-\[26\.4375rem\] {
+  height: 26.4375rem;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.w-\[21\.5625rem\] {
+  width: 21.5625rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.place-items-center {
+  place-items: center;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.self-end {
+  align-self: flex-end;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.border-b {
+  border-bottom-width: 1px;
+}
+
+.border-Cream {
+  --tw-border-opacity: 1;
+  border-color: hsl(27 66% 92% / var(--tw-border-opacity));
+}
+
+.bg-Cream {
   --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+  background-color: hsl(27 66% 92% / var(--tw-bg-opacity));
+}
+
+.bg-Soft_red {
+  --tw-bg-opacity: 1;
+  background-color: hsl(10 79% 65% / var(--tw-bg-opacity));
+}
+
+.bg-Very_pale_orange {
+  --tw-bg-opacity: 1;
+  background-color: hsl(33 100% 98% / var(--tw-bg-opacity));
+}
+
+.py-\[4\.1875rem\] {
+  padding-top: 4.1875rem;
+  padding-bottom: 4.1875rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.pr-1 {
+  padding-right: 0.25rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
+.pb-7 {
+  padding-bottom: 1.75rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pt-9 {
+  padding-top: 2.25rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pt-7 {
+  padding-top: 1.75rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-Cream {
+  --tw-text-opacity: 1;
+  color: hsl(27 66% 92% / var(--tw-text-opacity));
+}
+
+.text-Very_pale_orange {
+  --tw-text-opacity: 1;
+  color: hsl(33 100% 98% / var(--tw-text-opacity));
+}
+
+.text-Dark_brown {
+  --tw-text-opacity: 1;
+  color: hsl(25 47% 15% / var(--tw-text-opacity));
+}
+
+.text-Medium_brown {
+  --tw-text-opacity: 1;
+  color: hsl(28 10% 53% / var(--tw-text-opacity));
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.bar::before{
+  content: attr(data-count);
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  background-color: hsl(25, 47%, 15%);
+  color: hsl(33, 100%, 98%);
+  height: 2.625rem;
+  width: 4.375rem;
+  border-radius: 6px;
+  display: grid;
+  place-items: center;
+  z-index: 2;
+  opacity: 0;
+  transition: 500ms ease-in-out;
+}
+
+.bar {
+  position: relative;
+  margin-bottom: 0.5rem;
+  height: 2.125rem;
+  width: 2.125rem;
+  cursor: pointer;
+  border-radius: 0.375rem;
+  --tw-bg-opacity: 1;
+  background-color: hsl(10 79% 65% / var(--tw-bg-opacity));
+}
+
+@media (min-width: 768px) {
+  .bar {
+    margin-bottom: 0.25rem;
+    width: 3.25rem;
+  }
+}
+
+.bar:hover::before{
+  opacity: 1;
+}
+
+.bar.active {
+  --tw-bg-opacity: 1;
+  background-color: hsl(186 34% 60% / var(--tw-bg-opacity));
+}
+
+.day-p {
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: hsl(28 10% 53% / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .day-p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+/*
+### Font
+- Family: [DM Sans](https://fonts.google.com/specimen/DM+Sans)
+- Weights: 400, 700
+ */
+
+@media (min-width: 768px) {
+  .md\:mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
+  .md\:mb-\[4rem\] {
+    margin-bottom: 4rem;
+  }
+
+  .md\:h-\[7\.875rem\] {
+    height: 7.875rem;
+  }
+
+  .md\:h-\[31\.9375rem\] {
+    height: 31.9375rem;
+  }
+
+  .md\:w-\[33\.75rem\] {
+    width: 33.75rem;
+  }
+
+  .md\:rounded-3xl {
+    border-radius: 1.5rem;
+  }
+
+  .md\:rounded-2xl {
+    border-radius: 1rem;
+  }
+
+  .md\:py-\[11\.375rem\] {
+    padding-top: 11.375rem;
+    padding-bottom: 11.375rem;
+  }
+
+  .md\:px-\[2\.125rem\] {
+    padding-left: 2.125rem;
+    padding-right: 2.125rem;
+  }
+
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .md\:pt-8 {
+    padding-top: 2rem;
+  }
+
+  .md\:pt-7 {
+    padding-top: 1.75rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .md\:text-\[58px\] {
+    font-size: 58px;
+  }
+
+  .md\:text-\[36px\] {
+    font-size: 36px;
+  }
+
+  .md\:text-\[48px\] {
+    font-size: 48px;
+  }
+
+  .md\:text-\[56px\] {
+    font-size: 56px;
+  }
+
+  .md\:text-\[50px\] {
+    font-size: 50px;
+  }
+
+  .md\:text-\[52px\] {
+    font-size: 52px;
+  }
+
+  .md\:text-\[3\.25rem\] {
+    font-size: 3.25rem;
+  }
 }
