@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,13 +25,16 @@
     place-items: center;
     z-index: 2;
     opacity: 0;
-    transition: 500ms ease-in-out;
+    transform: translateY(-0.5rem);
+    transition: all 500ms ease-in-out;
 }
 .bar{
     @apply mb-2 md:mb-1 w-[2.125rem] h-[2.125rem] md:w-[3.25rem] bg-Soft_red rounded-md cursor-pointer relative
 }
 .bar:hover::before{
     opacity: 1;
+    transform: translate(-50%, 0);
+
 }
 .bar.active {
   @apply bg-Cyan;
@@ -38,8 +42,39 @@
 .day-p{
     @apply text-sm text-center font-normal md:text-base text-Medium_brown
 }
-/*
-### Font
-- Family: [DM Sans](https://fonts.google.com/specimen/DM+Sans)
-- Weights: 400, 700
- */
+/* .head{
+  animation: appear 2s ease-in-out 2.5s forwards;
+  opacity: 0;
+}
+.wrapper{
+  animation: appear 2s ease-in-out 3.5s forwards;
+  opacity: 0;
+}
+@keyframes appear {
+  0%{
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.loader{
+  animation: load 1s forwards 2.6s;
+}
+
+.spin {
+  animation: spin 1.5s forwards;
+}
+@keyframes load {
+  to {
+      opacity: 0;
+      visibility: hidden;
+  }
+}
+@keyframes spin {
+  to {
+      transform: rotate(360deg);
+  }
+} */

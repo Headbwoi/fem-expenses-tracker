@@ -16,23 +16,30 @@
     <title>Frontend Mentor | Expenses chart component</title>
     <link rel="stylesheet" href="public/output.css" />
   </head>
-  <body class="bg-Cream grid place-items-center min-h-screen">
+  <body class="bg-Cream grid place-items-center min-h-screen relative">
+    <!-- loader -->
+    <!-- <div class="absolute inset-0 w-full bg-Soft_red z-30 h-full grid place-items-center loader">
+      <div class="icon pr-1 pt-1 w-40 h-40 spin">
+       <img src="images/logo.svg" alt="logo" aria-hidden="true" class="w-full h-full object-contain">
+      </div>
+    </div> -->
     <main>
+      
       <div class="container">
         <div
           class="w-[21.5625rem] md:w-[33.75rem] py-[4.1875rem] md:py-[11.375rem] mx-auto"
         >
           <header
-            class="bg-Soft_red h-24 md:h-[7.875rem] rounded-lg md:rounded-3xl flex items-center justify-between px-5 md:px-[2.125rem] mb-4 md:mb-6"
+            class="bg-Soft_red h-24 md:h-[7.875rem] rounded-lg md:rounded-3xl flex items-center justify-between px-5 md:px-[2.125rem] mb-4 md:mb-6 head"
           >
             <div class="info block">
               <p
                 for="balance"
-                class="text-Cream text-base md:text-xl font-normal mb-2"
+                class="text-Cream text-base md:text-lg font-normal mb-3"
               >
                 My balance
               </p>
-              <p class="text-Very_pale_orange text-2xl md:text-4xl font-bold">
+              <p class="text-Very_pale_orange text-2xl md:text-[32px] font-bold">
                 $921.48
               </p>
             </div>
@@ -58,10 +65,10 @@
           </header>
 
           <div
-            class="w-full h-[26.4375rem] md:h-[31.9375rem] bg-Very_pale_orange pb-10 pt-7 md:pt-8 rounded-lg md:rounded-2xl px-5 md:px-10"
+            class="w-full h-[27.4375rem] md:h-[31.9375rem] bg-Very_pale_orange pb-10 pt-7 md:pt-9 rounded-lg md:rounded-2xl px-5 md:px-10 wrapper"
           >
             <h1
-              class="font-bold text-Dark_brown text-2xl md:text-4xl mb-[3.3125rem] md:mb-[4rem]"
+              class="font-bold text-Dark_brown text-2xl md:text-[30.5px] mb-[3.3125rem] md:mb-[4.3rem] tracking-wide"
             >
               Spending - Last 7 days
             </h1>
@@ -74,18 +81,18 @@
             <!-- totals -->
             <div class="total flex items-center justify-between pt-4 md:pt-7">
               <div>
-                <p class="md:text-xl text-Medium_brown font-normal -mt-1 mb-3">
+                <p class="md:text-lg text-Medium_brown font-normal -mt-2 mb-3">
                   Total this month
                 </p>
-                <p class="text-2xl md:text-[3.25rem] text-Dark_brown font-bold">
+                <p class="text-2xl md:text-[3rem] text-Dark_brown font-bold">
                   $478.33
                 </p>
               </div>
               <div class="text-right pt-8">
-                <p class="text-base md:text-xl text-Dark_brown font-bold">
+                <p class="text-base md:text-lg text-Dark_brown font-bold">
                   +2.4%
                 </p>
-                <p class="md:text-xl text-Medium_brown font-normal -mt-1">
+                <p class="md:text-lg text-Medium_brown font-normal -mt-1">
                   from last month
                 </p>
               </div>
