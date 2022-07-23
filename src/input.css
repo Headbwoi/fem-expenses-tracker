@@ -42,7 +42,7 @@
 .day-p{
     @apply text-sm text-center font-normal md:text-base text-Medium_brown
 }
-/* .head{
+.head{
   animation: appear 2s ease-in-out 2.5s forwards;
   opacity: 0;
 }
@@ -77,4 +77,4 @@
   to {
       transform: rotate(360deg);
   }
-} */
+}
